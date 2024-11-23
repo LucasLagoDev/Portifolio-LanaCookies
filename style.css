@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Rubik&display=swap');
+@import url("reset.css");
+@import url("styles/banner.css");
+@import url("styles/header.css");
+@import url("styles/cardapio.css");
+
+:root {
+    --cor-branco: #FFFF;
+    --cor-botao: #FFFFFF;
+    --cor-botao-houver: #f5deb3;
+    --cor-primaria: #674636;
+    --cor-fundo: #FFF8E8;
+    --cor-letra: #493628;
+    --cor-letra-secundaria: #B99470;
+
+
+
+    --fonte-primaria: 'Krona One', sans-serif;
+}
+
+body {
+    
+    overflow-x: hidden !important;
+}
+

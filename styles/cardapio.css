@@ -1,0 +1,143 @@
+
+.cardapio {
+    background-color: var(--cor-fundo);
+    height: auto;
+    width: 100vw;
+}
+
+
+
+.container-cardapio {
+    display: flex;
+    justify-content: center;
+}
+
+.container-cardapio-titulo {
+    text-align: center;
+    color: var(--cor-letra);
+    font-family: var(--fonte-primaria);
+    font-size: 4em;
+}
+
+.menu-cardapio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+
+.menu-item {
+    display: flex;
+    border-radius: 2em;
+    background-color: var(--cor-botao);
+    margin: 20px;
+    padding: 20px;
+    width: 700px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+}
+
+.menu-imagem {
+    border-radius: 2em;
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+.menu-detalhes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    flex: 1;
+}
+
+.menu-titulo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-letra);
+    margin: 0;
+    font-size: 2em;
+}
+
+.menu-descricao {
+    margin-top: 1em;
+    color: var(--cor-letra-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1em;
+}
+
+.menu-botao {
+    cursor: pointer;
+    border: solid var(--cor-letra);
+    border-radius: 2em;
+    width: 20em;
+    padding: 1em;
+    background-color: var(--cor-letra);
+    color: var(--cor-botao);
+    font-family: var(--fonte-primaria);
+    width: 200px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-botao:hover {
+    background-color: #6C4E31;
+    color: var(--cor-botao);
+}
+
+
+@media (min-width: 1024px) {
+    .menu-cardapio {
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 100%;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .menu-titulo {
+        font-size: 1
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .menu-cardapio {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin: 10px auto; 
+        padding: 15px;
+    }
+
+    .menu-imagem {
+        width: 70%;
+        max-height: 18em;
+    }
+
+    .menu-titulo {
+        font-size: 1.5em;
+    }
+
+    .menu-descricao {
+        font-size: 0.9em;
+    }
+
+    .menu-botao {
+        width: 100%;
+        padding: 1em;
+        margin-top: 1em;
+    }
+}

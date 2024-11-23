@@ -1,0 +1,168 @@
+.banner {
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--cor-fundo);
+}
+
+.primario {
+    align-items: center;
+    margin: 1 10em;
+}
+
+.container-descricao {
+    display: flex;
+    padding: 10em;
+}
+
+.banner__imagem {
+    height: 40em;
+    width: 80%;
+    border-radius: 10em;
+    margin-left: 6em;
+}
+
+.container__descricao {
+    padding: 0.1em;
+    margin-top: 2em;
+    font-size: 1em;
+    margin-bottom: 15em;
+}
+
+
+.banner-descricao-titulo {
+   color: var(--cor-letra);
+   font-family: var(--fonte-primaria);
+   font-size: 4em;
+   margin-bottom: 1rem;
+   
+}
+
+.banner-descricao-texto {
+    color: var(--cor-letra-secundaria);
+    margin-top: 0.1em;
+    font-size: 1.5rem;
+}
+
+.banner-imagem {
+    height: 100vh;
+}
+
+.about-titulo {
+    color: var(--cor-letra);
+    font-family: var(--fonte-primaria);
+    font-size: 4em;
+    margin-top: 3em;
+    align-items: center;
+}
+
+.about-descricao {
+    border: 1em solid var(--cor-branco);
+    background-color: var(--cor-branco);
+    border-radius: 2em;
+    width: 60%;
+}
+
+.container-descricao-about {
+    padding-left: 4em;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .container-descricao {
+        flex-direction: column; 
+        padding: 5em;
+    }
+
+
+    .banner__imagem {
+        height: 30em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+    }
+
+    .about-titulo {
+        font-size: 3em;
+        padding-left: 4em;
+    }
+
+    .banner-descricao-texto {
+        font-size: 1.8rem;
+    }
+
+    .about-descricao {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container-descricao-about {
+        padding-left: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        grid-template-columns: 1fr;
+        height: auto; 
+    }
+
+    .primario {
+       
+        padding: 0 1.5em;
+    }
+
+    .container-descricao {
+        flex-direction: column;
+        padding: 2em;
+        margin-bottom: 1em;
+    }
+
+    .banner__imagem {
+        margin-left: 2em; 
+        margin-right: 12em;
+        margin-top: 3em;
+        height: auto;
+        width: 90%;
+
+    }
+
+    .container__descricao {
+        padding: 1em 0;
+        margin-top: 1.5em;
+        font-size: 0.9em;
+        margin-right: 2em;
+    }
+
+    .about-titulo {
+        font-size: 2.5em; 
+        margin-bottom: 0.5rem;
+        padding-left: 5em;
+    }
+
+    .banner-descricao-texto {
+        font-size: 1.2rem;
+        margin-top: 0.5em;
+    }
+
+    .about-descricao {
+        width: 80%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .container-descricao-about {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        padding-bottom: 12em;
+    }
+}
