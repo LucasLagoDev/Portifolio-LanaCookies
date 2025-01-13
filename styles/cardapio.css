@@ -111,6 +111,12 @@
 
 
 @media (max-width: 1024px) {
+
+    .menu-cardapio {
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 100%;
+    }
+    
     .menu-cardapio {
         grid-template-columns: 1fr;
         max-width: 90%;
@@ -118,21 +124,28 @@
 
     .menu-item {
         width: 100%;
-        margin: 10px auto; 
+        margin: 10px auto;
         padding: 15px;
+        position: relative;
+        left: -19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 89%;
     }
 
     .menu-imagem {
         width: 70%;
-        max-height: 18em;
+        max-height: 11em;
     }
 
     .menu-titulo {
-        font-size: 1em;
+        font-size: 0.9em;
+        margin-top: 1em;
     }
 
     .menu-descricao {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     .menu-botao {
