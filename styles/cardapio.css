@@ -113,11 +113,11 @@
 @media (max-width: 1024px) {
     .menu-cardapio {
         grid-template-columns: 1fr;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .menu-item {
-        width: 90%;
+        width: 100%;
         margin: 10px auto; 
         padding: 15px;
     }
@@ -128,7 +128,7 @@
     }
 
     .menu-titulo {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .menu-descricao {
