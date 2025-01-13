@@ -125,7 +125,7 @@
     }
 
     .banner__imagem {
-        margin-left: 2em; 
+        margin-left: 0.5em; 
         margin-right: 12em;
         margin-top: 3em;
         height: auto;
@@ -141,9 +141,9 @@
     }
 
     .about-titulo {
-        font-size: 2.5em; 
+        font-size: 2em; 
         margin-bottom: 1rem;
-        padding-left: 3em;
+        padding-left: 1em;
     }
 
     .banner-descricao-texto {
