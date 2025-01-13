@@ -106,6 +106,7 @@ html {
           justify-content: space-between;
           height: auto;
           padding: 10px;
+          width: 100%;
       }
   
       .container-logo {
@@ -133,6 +134,8 @@ html {
       .sociais {
           display: flex;
           align-items: center;
+          display: flex;
+          flex-direction: column;
       }
   
       .sociais button {
