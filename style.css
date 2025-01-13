@@ -18,7 +18,7 @@
     --fonte-primaria: 'Krona One', sans-serif;
 }
 
-body {
+body, html {
     
     overflow-x: hidden !important;
 }
