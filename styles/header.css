@@ -147,7 +147,7 @@ html {
       }
 
       .menu nav a:hover::after {
-         width: 100px;
+         width: 40px;
       }
 
   }
